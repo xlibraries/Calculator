@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.xlibraries.scientifcCalcultor.R
 import org.mariuszgromada.math.mxparser.Expression
 
 
@@ -25,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         display = findViewById(R.id.display)
         display.showSoftInputOnFocus = false
 
-    }
 
     private fun updateText(strToAdd:String){
 
+    }
         val oldStr = display.text.toString()
         val cursorPs = display.selectionStart
         val leftStr = oldStr.substring(0,cursorPs)
